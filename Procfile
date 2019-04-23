@@ -1,3 +1,4 @@
 bundler install
-yum install sqlite-devel
+rake db:create
+rake db:migrate
 web: bundle exec rails server -p $PORT
